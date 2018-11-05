@@ -21,7 +21,7 @@ if (slider) {
     setLevel(level);
   }
 
-  var defaultLevel = '4'
+  var defaultLevel = '8'
   slider.value = defaultLevel;
   setLevel(defaultLevel);
 }
