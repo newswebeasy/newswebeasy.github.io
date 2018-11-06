@@ -1,0 +1,380 @@
+@charset "UTF-8";
+/**
+ * Reset some basic elements
+ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+  display: block; }
+
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  overflow-y: scroll; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+body {
+  width: 100%;
+  height: auto;
+  color: #333;
+  font-family: "ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+  font-size: 1.6rem;
+  line-height: 1;
+  letter-spacing: .02em;
+  -webkit-font-kerning: none;
+  font-kerning: none;
+  word-break: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent; }
+
+/**
+ * Figures
+ */
+figcaption {
+  font-size: 14px; }
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: 30px; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0; }
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400; }
+
+/**
+ * Links
+ */
+a {
+  color: #333;
+  text-decoration: none; }
+  a:hover {
+    color: #333;
+    text-decoration: underline; }
+  .social-media-list a:hover {
+    text-decoration: none; }
+    .social-media-list a:hover .username {
+      text-decoration: underline; }
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  color: #828282;
+  border-left: 4px solid #a1f1a1;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+  font-size: 15px;
+  border: 1px solid #a1f1a1;
+  border-radius: 3px;
+  background-color: #eef; }
+
+code {
+  padding: 1px 5px; }
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto; }
+  pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0; }
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  max-width: 100%;
+  margin: 5px 5px 0 5px; }
+  @media screen and (min-width: 600px) {
+    .wrapper {
+      max-width: 960px; } }
+  @media screen and (min-width: 960px) {
+    .wrapper {
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto; } }
+
+/**
+ * Clearfix
+ */
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/**
+ * Icons
+ */
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  fill: #828282;
+  padding-right: 5px;
+  vertical-align: text-top; }
+
+/**
+ */
+span[data-word-id] {
+  color: #1AAD19;
+  font-weight: 700; }
+
+section.green {
+  line-height: 1.2; }
+  section.green .section_title {
+    background-color: #1AAD19;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 15px 8px 5px 8px;
+    border-radius: 5px;
+    margin: 10px 0; }
+
+rt.hidden {
+  display: none; }
+
+.breadcrumb ol {
+  display: flex;
+  align-items: stretch;
+  margin-left: 0; }
+  .breadcrumb ol li {
+    width: 100px;
+    list-style-type: none;
+    padding: 10px 5px;
+    margin-right: 5px;
+    font-weight: 700;
+    white-space: nowrap;
+    text-align: center; }
+    .breadcrumb ol li a {
+      color: #1AAD19; }
+
+.linkad {
+  width: 100%;
+  margin: 5px 0; }
+
+.feedad {
+  width: 100%; }
+
+.rectad {
+  width: 100%; }
+
+.rectdispad {
+  width: 100%; }
+
+.bannerad {
+  width: 100%; }
+
+.footerad {
+  width: 100%; }
+
+.webcontentad {
+  float: left;
+  width: 100%; }
+  @media screen and (min-width: 600px) {
+    .webcontentad {
+      width: 50%;
+      margin-right: 20px; } }
+
+/**
+ * Site header
+ */
+.site-header {
+  border-top: 5px solid #1AAD19;
+  border-bottom: 1px solid #a1f1a1;
+  min-height: 55.95px;
+  position: relative; }
+
+.site-title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left; }
+  .site-title, .site-title:visited {
+    color: #1AAD19; }
+
+.site-nav {
+  position: absolute;
+  top: 9px;
+  right: 5px;
+  background-color: #fdfdfd;
+  border: 1px solid #a1f1a1;
+  border-radius: 5px;
+  text-align: right;
+  line-height: 54px; }
+  .site-nav label[for="nav-trigger"] {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 36px;
+    z-index: 2;
+    cursor: pointer; }
+  .site-nav .menu-icon {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 26px;
+    line-height: 0;
+    padding-top: 10px;
+    text-align: center; }
+    .site-nav .menu-icon > svg {
+      fill: #1AAD19; }
+  .site-nav .nav-trigger {
+    display: none; }
+  .site-nav input ~ .trigger {
+    clear: both;
+    display: none; }
+  .site-nav input:checked ~ .trigger {
+    display: block;
+    padding-bottom: 5px; }
+  .site-nav .page-link {
+    color: #1AAD19;
+    line-height: 1.5;
+    display: block;
+    padding: 5px 10px;
+    margin-left: 10px; }
+    .site-nav .page-link:not(:last-child) {
+      margin-right: 0; }
+  @media screen and (min-width: 600px) {
+    .site-nav {
+      position: inherit;
+      border: none; }
+      .site-nav .menu-icon {
+        display: none; }
+      .site-nav input ~ .trigger {
+        display: block; }
+      .site-nav .page-link {
+        display: inline;
+        margin-left: 0; } }
+  @media screen and (min-width: 800px) {
+    .site-nav input ~ .trigger {
+      clear: none; } }
+
+/**
+ * Site footer
+ */
+.footnote_link {
+  color: #1AAD19;
+  font-weight: 700; }
+
+.site-footer {
+  border-top: 1px solid #a1f1a1;
+  padding-bottom: 5px; }
+  .site-footer .footnote {
+    color: #1AAD19;
+    font-size: 0.8em;
+    margin: 5px 0; }
+
+.easy-news {
+  display: flex;
+  flex-direction: column; }
+  .easy-news .content {
+    margin-top: 5px; }
+  .easy-news main {
+    flex: 1 100%;
+    width: 100%;
+    max-width: 640px; }
+    .easy-news main img.cover {
+      width: 100%; }
+    .easy-news main .article_title {
+      padding-top: 1em; }
+      .easy-news main .article_title h1 {
+        display: inline;
+        line-height: 1.75;
+        font-size: 1.5em;
+        font-weight: 700;
+        letter-spacing: .025em; }
+      .easy-news main .article_title .tag {
+        display: inline-block;
+        padding: 10px 5px;
+        margin-right: 5px;
+        font-size: 0.8em;
+        font-weight: 700;
+        white-space: nowrap;
+        text-align: center; }
+        .easy-news main .article_title .tag a {
+          color: #1AAD19; }
+    .easy-news main .datetime {
+      display: block;
+      margin: .5em 0;
+      font-size: 15px;
+      font-weight: normal;
+      color: #606060;
+      letter-spacing: -.025em; }
+    .easy-news main .player {
+      margin-bottom: 5px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #a1f1a1; }
+    .easy-news main .body {
+      line-height: 2.4;
+      letter-spacing: .025em;
+      margin-bottom: 15px; }
+    .easy-news main section {
+      margin-bottom: 10px; }
+    .easy-news main section.words .word {
+      font-weight: 700; }
+    .easy-news main section.words .descriptions {
+      margin-bottom: 20px; }
+  .easy-news aside {
+    flex: 1 100%;
+    margin-bottom: 10px; }
+    .easy-news aside .related_news ul {
+      margin: 0; }
+      .easy-news aside .related_news ul li {
+        list-style-type: none;
+        margin-bottom: 20px; }
+        .easy-news aside .related_news ul li .cover {
+          width: 100%; }
+        .easy-news aside .related_news ul li .item_title {
+          font-weight: 700; }
+    .easy-news aside .web_news {
+      width: 100%; }
+      .easy-news aside .web_news h4 {
+        font-weight: 700; }
+  @media screen and (min-width: 600px) {
+    .easy-news {
+      flex-direction: row; }
+      .easy-news main {
+        flex: 2 0px; }
+      .easy-news aside {
+        flex: 1 0px;
+        padding-left: 20px; } }
