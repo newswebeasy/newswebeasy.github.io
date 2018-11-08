@@ -302,78 +302,90 @@ rt.hidden {
     font-size: 0.8em;
     margin: 5px 0; }
 
-.easy-news {
+.easy-list {
   display: flex;
   flex-direction: column; }
-  .easy-news .content {
+  .easy-list .content {
     margin-top: 5px; }
-  .easy-news main {
+  .easy-list main {
     flex: 1 100%;
     width: 100%;
-    max-width: 640px; }
-    .easy-news main img.cover {
-      width: 100%; }
-    .easy-news main .article_title {
-      padding-top: 1em; }
-      .easy-news main .article_title h1 {
-        display: inline;
-        line-height: 1.75;
-        font-size: 1.5em;
-        font-weight: 700;
-        letter-spacing: .025em; }
-      .easy-news main .article_title .tag {
-        display: inline-block;
-        padding: 10px 5px;
-        margin-right: 5px;
-        font-size: 0.8em;
-        font-weight: 700;
-        white-space: nowrap;
-        text-align: center; }
-        .easy-news main .article_title .tag a {
-          color: #1AAD19; }
-    .easy-news main .datetime {
-      display: block;
-      margin: .5em 0;
-      font-size: 15px;
-      font-weight: normal;
-      color: #606060;
-      letter-spacing: -.025em; }
-    .easy-news main .player {
-      margin-bottom: 5px;
-      padding: 10px;
-      border-radius: 5px;
-      background-color: #a1f1a1; }
-    .easy-news main .body {
-      line-height: 2.4;
-      letter-spacing: .025em;
-      margin-bottom: 15px; }
-    .easy-news main section {
-      margin-bottom: 10px; }
-    .easy-news main section.words .word {
-      font-weight: 700; }
-    .easy-news main section.words .descriptions {
-      margin-bottom: 20px; }
-  .easy-news aside {
-    flex: 1 100%;
-    margin-bottom: 10px; }
-    .easy-news aside .related_news ul {
+    max-width: 640px;
+    margin-top: 10px; }
+    .easy-list main .list {
       margin: 0; }
-      .easy-news aside .related_news ul li {
+      .easy-list main .list li {
+        display: flex;
+        flex-direction: column;
         list-style-type: none;
         margin-bottom: 20px; }
-        .easy-news aside .related_news ul li .cover {
+        .easy-list main .list li .thumbnail {
           width: 100%; }
-        .easy-news aside .related_news ul li .item_title {
-          font-weight: 700; }
-    .easy-news aside .web_news {
-      width: 100%; }
-      .easy-news aside .web_news h4 {
-        font-weight: 700; }
+          .easy-list main .list li .thumbnail img {
+            width: 100%; }
+        .easy-list main .list li .summary h3 {
+          display: inline;
+          line-height: 1.5;
+          font-size: 1.2em;
+          font-weight: 700;
+          letter-spacing: .025em; }
+        .easy-list main .list li .summary .tag {
+          display: inline-block;
+          padding: 10px 5px;
+          margin-right: 5px;
+          font-size: 0.8em;
+          font-weight: 700;
+          white-space: nowrap;
+          text-align: center; }
+          .easy-list main .list li .summary .tag a {
+            color: #1AAD19; }
+        .easy-list main .list li .summary .datetime {
+          display: block;
+          margin-bottom: .5em;
+          font-size: 15px;
+          font-weight: normal;
+          color: #a08e8e;
+          letter-spacing: -.025em; }
+        @media screen and (min-width: 600px) {
+          .easy-list main .list li {
+            flex-direction: row; }
+            .easy-list main .list li .thumbnail {
+              width: 160px;
+              flex-grow: 0;
+              flex-shrink: 0; }
+            .easy-list main .list li .summary {
+              margin-left: 20px; } }
+  .easy-list aside {
+    flex: 1 100%;
+    margin-bottom: 10px; }
+    .easy-list aside .section_title {
+      display: flex;
+      justify-content: space-around;
+      padding: 5px 10px; }
+      .easy-list aside .section_title a {
+        color: #ffffff; }
+    .easy-list aside .calendar {
+      width: 100%;
+      border-collapse: collapse; }
+      .easy-list aside .calendar th {
+        background: #1AAD19;
+        color: #ffffff; }
+      .easy-list aside .calendar td, .easy-list aside .calendar th {
+        font-weight: 700;
+        padding: 5px 0;
+        text-align: center;
+        border: 1px solid #a1f1a1; }
+      .easy-list aside .calendar td.current {
+        background: #a1f1a1; }
+      .easy-list aside .calendar td.gray {
+        background: #cccccc; }
+      .easy-list aside .calendar td a {
+        color: #1AAD19; }
   @media screen and (min-width: 600px) {
-    .easy-news {
+    .easy-list {
       flex-direction: row; }
-      .easy-news main {
+      .easy-list main {
         flex: 2 0px; }
-      .easy-news aside {
+      .easy-list aside {
         flex: 1 0px;
         padding-left: 20px; } }

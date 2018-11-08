@@ -177,7 +177,6 @@ rt.hidden {
   .breadcrumb ol li {
     width: 100px;
     list-style-type: none;
-    padding: 10px 5px;
     margin-right: 5px;
     font-weight: 700;
     white-space: nowrap;
