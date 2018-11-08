@@ -346,6 +346,8 @@ rt.hidden {
           font-weight: normal;
           color: #a08e8e;
           letter-spacing: -.025em; }
+        .easy-list main .list li .summary .outline {
+          line-height: 1.5; }
         @media screen and (min-width: 600px) {
           .easy-list main .list li {
             flex-direction: row; }
