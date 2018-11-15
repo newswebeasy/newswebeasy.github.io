@@ -75,12 +75,11 @@ a {
   color: #333;
   text-decoration: none; }
   a:hover {
-    color: #333;
-    text-decoration: underline; }
-  .social-media-list a:hover {
-    text-decoration: none; }
-    .social-media-list a:hover .username {
-      text-decoration: underline; }
+    color: #333; }
+  @media screen and (min-width: 600px) {
+    a:hover {
+      color: #333;
+      text-decoration: underline; } }
 
 /**
  * Blockquotes
@@ -312,15 +311,26 @@ rt.hidden {
     width: 100%;
     max-width: 640px;
     margin-top: 10px; }
+    .easy-list main .article_title {
+      padding-top: 1em; }
+      .easy-list main .article_title h1 {
+        display: inline;
+        line-height: 1.75;
+        font-size: 1.5em;
+        font-weight: 700;
+        letter-spacing: .025em; }
     .easy-list main .list {
       margin: 0; }
       .easy-list main .list li {
         display: flex;
         flex-direction: column;
         list-style-type: none;
-        margin-bottom: 20px; }
+        margin-top: 5px;
+        padding-top: 5px;
+        border-top: 1px solid #a1f1a1; }
         .easy-list main .list li .thumbnail {
-          width: 100%; }
+          width: 100%;
+          margin-top: 5px; }
           .easy-list main .list li .thumbnail img {
             width: 100%; }
         .easy-list main .list li .summary h3 {
@@ -359,6 +369,20 @@ rt.hidden {
               flex-shrink: 0; }
             .easy-list main .list li .summary {
               margin-left: 20px; } }
+    .easy-list main .pagination {
+      margin: 40px auto;
+      text-align: center; }
+      .easy-list main .pagination .button {
+        width: 50px;
+        height: 30px;
+        padding: 10px 20px;
+        border-radius: 5px; }
+      .easy-list main .pagination a.button {
+        background: #1AAD19;
+        font-weight: 700;
+        color: white; }
+      .easy-list main .pagination span.button {
+        border: 1px solid #a1f1a1; }
   .easy-list aside {
     flex: 1 100%;
     margin-bottom: 10px; }
@@ -386,6 +410,8 @@ rt.hidden {
         background: #eeeeee; }
       .easy-list aside .calendar td a {
         color: #1AAD19; }
+    .easy-list aside .page-link {
+      color: #1AAD19; }
   @media screen and (min-width: 600px) {
     .easy-list {
       flex-direction: row; }

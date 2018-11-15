@@ -75,12 +75,11 @@ a {
   color: #333;
   text-decoration: none; }
   a:hover {
-    color: #333;
-    text-decoration: underline; }
-  .social-media-list a:hover {
-    text-decoration: none; }
-    .social-media-list a:hover .username {
-      text-decoration: underline; }
+    color: #333; }
+  @media screen and (min-width: 600px) {
+    a:hover {
+      color: #333;
+      text-decoration: underline; } }
 
 /**
  * Blockquotes
