@@ -370,11 +370,8 @@ rt.hidden {
   .playlist aside {
     flex: 1 100%;
     margin-bottom: 10px; }
-    .playlist aside .verticalad {
+    .playlist aside .autoad {
       display: none; }
-      @media screen and (min-width: 600px) {
-        .playlist aside .verticalad {
-          display: block; } }
   @media screen and (min-width: 600px) {
     .playlist {
       flex-direction: row; }
@@ -382,4 +379,6 @@ rt.hidden {
         flex: 2 0px; }
       .playlist aside {
         flex: 1 0px;
-        padding-left: 20px; } }
+        padding-left: 20px; }
+        .playlist aside .autoad {
+          display: block; } }
