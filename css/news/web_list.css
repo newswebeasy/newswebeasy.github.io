@@ -370,7 +370,7 @@ rt.hidden {
             .web-list main .list li .summary {
               margin-left: 20px; } }
     .web-list main .pagination {
-      margin: 40px auto;
+      margin: 40px auto 60px auto;
       text-align: center; }
       .web-list main .pagination .button {
         width: 50px;
@@ -411,7 +411,8 @@ rt.hidden {
       .web-list aside .calendar td a {
         color: #1AAD19; }
     .web-list aside .page-link {
-      color: #1AAD19; }
+      color: #1AAD19;
+      font-weight: 700; }
   @media screen and (min-width: 600px) {
     .web-list {
       flex-direction: row; }
