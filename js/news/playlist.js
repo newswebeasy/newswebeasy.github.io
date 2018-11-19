@@ -1,7 +1,7 @@
 var playing = null;
 var playlist = document.getElementsByTagName('li');
 
-var player = document.getElementById('player');
+var player = document.getElementsByClassName('title_link');
 player.load();
 
 var repeat_one = false;
