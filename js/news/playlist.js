@@ -17,10 +17,10 @@ player.onended = function () {
   }
 }
 player.onplay = function (e) {
-  playing.parent.parent.classList.add("playing");
+  playing.parentElement.parentElement.classList.add("playing");
 }
 player.onpause = function (e) {
-  playing.parent.parent.classList.remove("playing");
+  playing.parentElement.parentElement.classList.remove("playing");
 }
 
 function play(el) {
@@ -31,7 +31,7 @@ function play(el) {
     player.load();
 
     if (last) {
-      last.parent.parent.classList.remove("playing");
+      last.parentElement.parentElement.classList.remove("playing");
     }
   }
 
