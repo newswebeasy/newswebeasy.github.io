@@ -17,10 +17,10 @@ player.onended = function () {
   }
 }
 player.onplay = function (e) {
-  playing.classList.add("playing");
+  playing.parent.parent.classList.add("playing");
 }
 player.onpause = function (e) {
-  playing.classList.remove("playing");
+  playing.parent.parent.classList.remove("playing");
 }
 
 function play(el) {
@@ -31,7 +31,7 @@ function play(el) {
     player.load();
 
     if (last) {
-      last.classList.remove("playing");
+      last.parent.parent.classList.remove("playing");
     }
   }
 
@@ -42,4 +42,6 @@ function play(el) {
   return false;
 }
 
-play(playlist[0]);
+if (playlist && playlist.length > 0) {
+  play(playlist[0]);
+}
