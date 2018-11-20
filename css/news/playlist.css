@@ -367,6 +367,11 @@ rt.hidden {
             flex-direction: row; }
             .playlist main .list li .summary {
               margin-left: 20px; } }
+    .playlist main .index_link {
+      display: block;
+      margin-top: 30px;
+      color: #1AAD19;
+      font-weight: 700; }
   .playlist aside {
     flex: 1 100%;
     margin-bottom: 10px; }
