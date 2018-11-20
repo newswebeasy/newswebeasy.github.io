@@ -411,7 +411,9 @@ rt.hidden {
       .web-list aside .calendar td a {
         color: #1AAD19; }
     .web-list aside .page-link {
+      display: block;
       color: #1AAD19;
+      line-height: 2.0;
       font-weight: 700; }
   @media screen and (min-width: 600px) {
     .web-list {
