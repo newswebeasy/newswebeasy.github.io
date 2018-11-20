@@ -120,7 +120,7 @@ pre {
  */
 .wrapper {
   max-width: 100%;
-  margin: 5px 5px 0 5px; }
+  margin: 5px; }
   @media screen and (min-width: 600px) {
     .wrapper {
       max-width: 960px; } }
@@ -294,6 +294,7 @@ rt.hidden {
   font-weight: 700; }
 
 .site-footer {
+  margin-top: 10px;
   border-top: 1px solid #a1f1a1;
   padding-bottom: 5px; }
   .site-footer .footnote {
@@ -307,8 +308,7 @@ rt.hidden {
   .playlist main {
     flex: 1 100%;
     width: 100%;
-    max-width: 640px;
-    margin-top: 10px; }
+    max-width: 640px; }
     .playlist main .article_title {
       padding-top: 1em; }
       .playlist main .article_title h1 {
@@ -373,8 +373,7 @@ rt.hidden {
       color: #1AAD19;
       font-weight: 700; }
   .playlist aside {
-    flex: 1 100%;
-    margin-bottom: 10px; }
+    flex: 1 100%; }
     .playlist aside .autoad {
       display: none; }
   @media screen and (min-width: 600px) {

@@ -120,7 +120,7 @@ pre {
  */
 .wrapper {
   max-width: 100%;
-  margin: 5px 5px 0 5px; }
+  margin: 5px; }
   @media screen and (min-width: 600px) {
     .wrapper {
       max-width: 960px; } }
@@ -294,6 +294,7 @@ rt.hidden {
   font-weight: 700; }
 
 .site-footer {
+  margin-top: 10px;
   border-top: 1px solid #a1f1a1;
   padding-bottom: 5px; }
   .site-footer .footnote {
