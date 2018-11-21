@@ -367,8 +367,7 @@ rt.hidden {
               display: block;
               width: 100%; } }
         .easy-list main .list li .listfeedad_mobile {
-          display: block;
-          width: 100%; }
+          display: block; }
           @media screen and (min-width: 600px) {
             .easy-list main .list li .listfeedad_mobile {
               display: none; } }
