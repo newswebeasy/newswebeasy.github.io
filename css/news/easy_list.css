@@ -360,6 +360,18 @@ rt.hidden {
             color: #a08e8e; }
         .easy-list main .list li .summary .outline {
           line-height: 1.5; }
+        .easy-list main .list li .summary .listfeedad_desktop {
+          display: none; }
+          @media screen and (min-width: 600px) {
+            .easy-list main .list li .summary .listfeedad_desktop {
+              display: block;
+              width: 100%; } }
+        .easy-list main .list li .summary .listfeedad_mobile {
+          display: block;
+          display: 100%; }
+          @media screen and (min-width: 600px) {
+            .easy-list main .list li .summary .listfeedad_mobile {
+              display: none; } }
         @media screen and (min-width: 600px) {
           .easy-list main .list li {
             flex-direction: row; }
