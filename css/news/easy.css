@@ -350,11 +350,8 @@ rt.hidden {
       margin-bottom: 10px; }
     .easy-news main section.words .word {
       font-weight: 700; }
-    .easy-news main section.words .descriptions {
-      margin-bottom: 20px; }
   .easy-news aside {
-    flex: 1 100%;
-    margin-bottom: 10px; }
+    flex: 1 100%; }
     .easy-news aside .related_news ul {
       margin: 0; }
       .easy-news aside .related_news ul li {
