@@ -393,6 +393,7 @@ rt.hidden {
         font-weight: 700;
         color: white; }
       .easy-list main .pagination span.button {
+        color: #1AAD19;
         border: 1px solid #a1f1a1; }
   .easy-list aside {
     flex: 1 100%;
