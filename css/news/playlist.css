@@ -258,6 +258,17 @@ rt.hidden {
     flex: 1 100%;
     width: 100%;
     max-width: 640px; }
+    .content main .list .listfeedad_desktop {
+      display: none; }
+      @media screen and (min-width: 600px) {
+        .content main .list .listfeedad_desktop {
+          display: block;
+          width: 100%; } }
+    .content main .list .listfeedad_mobile {
+      display: block; }
+      @media screen and (min-width: 600px) {
+        .content main .list .listfeedad_mobile {
+          display: none; } }
   .content aside {
     flex: 1 100%; }
     .content aside section {

@@ -258,6 +258,17 @@ rt.hidden {
     flex: 1 100%;
     width: 100%;
     max-width: 640px; }
+    .content main .list .listfeedad_desktop {
+      display: none; }
+      @media screen and (min-width: 600px) {
+        .content main .list .listfeedad_desktop {
+          display: block;
+          width: 100%; } }
+    .content main .list .listfeedad_mobile {
+      display: block; }
+      @media screen and (min-width: 600px) {
+        .content main .list .listfeedad_mobile {
+          display: none; } }
   .content aside {
     flex: 1 100%; }
     .content aside section {
@@ -332,7 +343,7 @@ rt.hidden {
   line-height: 2.4;
   letter-spacing: .025em;
   margin-bottom: 15px; }
-.easy-news main section.words {
+.easy-news main section.words .section_title {
   background-color: #1AAD19;
   color: #fff;
   font-size: 1.1em;
@@ -340,8 +351,8 @@ rt.hidden {
   padding: 15px 8px 5px 8px;
   border-radius: 5px;
   margin-bottom: 5px; }
-  .easy-news main section.words .word {
-    font-weight: 700; }
+.easy-news main section.words .word {
+  font-weight: 700; }
 .easy-news aside .rectad {
   margin-bottom: 20px; }
 .easy-news aside .related_news ul {
