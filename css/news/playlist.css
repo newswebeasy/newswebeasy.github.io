@@ -330,7 +330,7 @@ rt.hidden {
     .playlist main .list {
       margin: 0; }
       .playlist main .list .playing:before {
-        content: url("http://newswebeasy.github.io/assets/playing.gif");
+        content: url("https://newswebeasy.github.io/assets/playing.gif");
         float: left;
         margin-left: 10px;
         margin-top: 10px; }
