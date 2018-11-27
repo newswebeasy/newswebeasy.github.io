@@ -393,29 +393,35 @@ rt.hidden {
   .easy-list aside {
     flex: 1 100%;
     margin-bottom: 10px; }
-    .easy-list aside .calendar_title {
+    .easy-list aside section .calendar_title {
       display: flex;
       justify-content: space-around;
-      padding: 5px 8px; }
-      .easy-list aside .calendar_title a {
+      padding: 5px 8px;
+      background-color: #1AAD19;
+      color: #fff;
+      font-size: 1.1em;
+      font-weight: 700;
+      border-radius: 5px;
+      margin-bottom: 5px; }
+      .easy-list aside section .calendar_title a {
         color: #ffffff; }
-    .easy-list aside .calendar {
+    .easy-list aside section .calendar {
       width: 100%;
       border-collapse: collapse; }
-      .easy-list aside .calendar th {
+      .easy-list aside section .calendar th {
         background: #1AAD19;
         color: #ffffff; }
-      .easy-list aside .calendar td, .easy-list aside .calendar th {
+      .easy-list aside section .calendar td, .easy-list aside section .calendar th {
         font-weight: 700;
         padding: 5px 0;
         text-align: center;
         border: 1px solid #a1f1a1; }
-      .easy-list aside .calendar td.current {
+      .easy-list aside section .calendar td.current {
         background: #a1f1a1; }
-      .easy-list aside .calendar td.gray {
+      .easy-list aside section .calendar td.gray {
         font-weight: normal;
         background: #eeeeee; }
-      .easy-list aside .calendar td a {
+      .easy-list aside section .calendar td a {
         color: #1AAD19; }
     .easy-list aside .page-link {
       display: block;
