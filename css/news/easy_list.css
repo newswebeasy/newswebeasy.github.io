@@ -393,11 +393,11 @@ rt.hidden {
   .easy-list aside {
     flex: 1 100%;
     margin-bottom: 10px; }
-    .easy-list aside .section_title {
+    .easy-list aside .calendar_title {
       display: flex;
       justify-content: space-around;
-      padding: 5px 10px; }
-      .easy-list aside .section_title a {
+      padding: 5px 8px; }
+      .easy-list aside .calendar_title a {
         color: #ffffff; }
     .easy-list aside .calendar {
       width: 100%;

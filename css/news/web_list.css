@@ -391,11 +391,11 @@ rt.hidden {
         border: 1px solid #a1f1a1; }
   .web-list aside {
     flex: 1 100%; }
-    .web-list aside section .section_title {
+    .web-list aside section .calendar_title {
       display: flex;
       justify-content: space-around;
       padding: 5px 8px; }
-      .web-list aside section .section_title a {
+      .web-list aside section .calendar_title a {
         color: #ffffff; }
     .web-list aside .calendar {
       width: 100%;
