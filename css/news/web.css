@@ -172,20 +172,6 @@ rt.hidden {
     .breadcrumb ol li a {
       color: #1AAD19; }
 
-.rectad {
-  width: 100%; }
-
-.bannerad {
-  width: 100%; }
-
-.webcontentad {
-  float: left;
-  width: 100%; }
-  @media screen and (min-width: 600px) {
-    .webcontentad {
-      width: 50%;
-      margin-right: 20px; } }
-
 /**
  * Site header
  */
@@ -371,13 +357,15 @@ rt.hidden {
       font-weight: 700;
       margin-top: 10px;
       margin-bottom: 5px; }
+.web-news aside .rectad {
+  margin-bottom: 20px; }
 .web-news aside section .section_title {
   padding: 5px 8px; }
 .web-news aside .related_news ul {
   margin: 0; }
   .web-news aside .related_news ul li {
     list-style-type: none;
-    margin-bottom: 20px; }
+    margin-bottom: 15px; }
     .web-news aside .related_news ul li .cover {
       width: 100%; }
     .web-news aside .related_news ul li .item_title {
