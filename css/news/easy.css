@@ -270,6 +270,8 @@ rt.hidden {
         padding: 15px 8px 5px 8px;
         border-radius: 5px;
         margin-bottom: 5px; }
+    .content aside section.web_news, .content aside section.easy_news {
+      margin-top: 5px; }
   @media screen and (min-width: 600px) {
     .content {
       flex-direction: row; }
@@ -330,10 +332,16 @@ rt.hidden {
   line-height: 2.4;
   letter-spacing: .025em;
   margin-bottom: 15px; }
-.easy-news main section {
-  margin-bottom: 10px; }
-.easy-news main section.words .word {
-  font-weight: 700; }
+.easy-news main section.words {
+  background-color: #1AAD19;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 700;
+  padding: 15px 8px 5px 8px;
+  border-radius: 5px;
+  margin-bottom: 5px; }
+  .easy-news main section.words .word {
+    font-weight: 700; }
 .easy-news aside .rectad {
   margin-bottom: 20px; }
 .easy-news aside .related_news ul {

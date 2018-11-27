@@ -270,6 +270,8 @@ rt.hidden {
         padding: 15px 8px 5px 8px;
         border-radius: 5px;
         margin-bottom: 5px; }
+    .content aside section.web_news, .content aside section.easy_news {
+      margin-top: 5px; }
   @media screen and (min-width: 600px) {
     .content {
       flex-direction: row; }
