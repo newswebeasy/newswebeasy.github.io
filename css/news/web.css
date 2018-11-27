@@ -312,7 +312,7 @@ rt.hidden {
   border-radius: 5px;
   padding: 10px;
   display: flex;
-  margin: 10px 0;
+  margin-bottom: 10px;
   -webkit-align-items: center;
   align-items: center; }
   .furigana-bar label {
@@ -350,6 +350,8 @@ rt.hidden {
   font-weight: normal;
   color: #606060;
   letter-spacing: -.025em; }
+.web-news main .linkad {
+  margin-bottom: 10px; }
 .web-news main .player {
   margin-bottom: 5px;
   padding: 10px;
