@@ -155,17 +155,6 @@ span[data-word-id] {
   color: #1AAD19;
   font-weight: 700; }
 
-section.green {
-  line-height: 1.2; }
-  section.green .section_title {
-    background-color: #1AAD19;
-    color: #fff;
-    font-size: 1.1em;
-    font-weight: 700;
-    padding: 15px 8px 5px 8px;
-    border-radius: 5px;
-    margin: 10px 0; }
-
 rt.hidden {
   display: none; }
 
@@ -285,6 +274,16 @@ rt.hidden {
     max-width: 640px; }
   .content aside {
     flex: 1 100%; }
+    .content aside section {
+      line-height: 1.2; }
+      .content aside section .section_title {
+        background-color: #1AAD19;
+        color: #fff;
+        font-size: 1.1em;
+        font-weight: 700;
+        padding: 15px 8px 5px 8px;
+        border-radius: 5px;
+        margin-bottom: 5px 0; }
   @media screen and (min-width: 600px) {
     .content {
       flex-direction: row; }
