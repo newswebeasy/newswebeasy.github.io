@@ -371,7 +371,10 @@ rt.hidden {
       margin-top: 10px;
       margin-bottom: 5px; }
 .web-news aside .rectad {
-  margin-bottom: 20px; }
+  margin: 20px; }
+  @media screen and (min-width: 600px) {
+    .web-news aside .rectad {
+      margin-top: 0px; } }
 .web-news aside section .section_title {
   padding: 5px 8px; }
 .web-news aside .related_news ul {

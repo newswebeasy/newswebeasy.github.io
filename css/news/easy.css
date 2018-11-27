@@ -352,9 +352,13 @@ rt.hidden {
   border-radius: 5px;
   margin-bottom: 5px; }
 .easy-news main section.words .word {
+  margin-top: 5px;
   font-weight: 700; }
 .easy-news aside .rectad {
-  margin-bottom: 20px; }
+  margin: 20px; }
+  @media screen and (min-width: 600px) {
+    .easy-news aside .rectad {
+      margin-top: 0px; } }
 .easy-news aside .related_news ul {
   margin: 0; }
   .easy-news aside .related_news ul li {
