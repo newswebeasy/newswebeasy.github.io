@@ -261,7 +261,8 @@ rt.hidden {
     .content main .tags_bar {
       display: flex;
       flex-wrap: wrap;
-      line-height: 1.5; }
+      line-height: 1.5;
+      margin-bottom: 10px; }
       .content main .tags_bar .tag {
         display: inline-block;
         font-size: 0.8em;
@@ -337,14 +338,6 @@ rt.hidden {
     flex: 1 100%;
     width: 100%;
     max-width: 640px; }
-    .web-list main .article_title {
-      padding-top: 1em; }
-      .web-list main .article_title h1 {
-        display: inline;
-        line-height: 1.75;
-        font-size: 1.5em;
-        font-weight: 700;
-        letter-spacing: .025em; }
     .web-list main .list {
       margin: 0; }
       .web-list main .list li {

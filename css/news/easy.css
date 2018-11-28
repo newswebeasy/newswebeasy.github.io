@@ -261,7 +261,8 @@ rt.hidden {
     .content main .tags_bar {
       display: flex;
       flex-wrap: wrap;
-      line-height: 1.5; }
+      line-height: 1.5;
+      margin-bottom: 10px; }
       .content main .tags_bar .tag {
         display: inline-block;
         font-size: 0.8em;
