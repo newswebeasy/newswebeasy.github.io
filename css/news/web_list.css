@@ -280,6 +280,22 @@ rt.hidden {
       .content main .tags_bar .selected {
         color: white;
         background: #1AAD19; }
+    .content main .article_title h1 {
+      display: inline;
+      line-height: 1.75;
+      font-size: 1.5em;
+      font-weight: 700;
+      letter-spacing: .025em; }
+    .content main .article_title .tag {
+      display: inline-block;
+      padding: 10px 5px;
+      margin-right: 5px;
+      font-size: 0.8em;
+      font-weight: 700;
+      white-space: nowrap;
+      text-align: center; }
+      .content main .article_title .tag a {
+        color: #1AAD19; }
     .content main .list .listfeedad_desktop {
       display: none; }
       @media screen and (min-width: 600px) {
@@ -329,122 +345,103 @@ rt.hidden {
     font-size: 0.8em;
     margin: 5px 0; }
 
-.web-list {
-  display: flex;
-  flex-direction: column; }
-  .web-list .content {
-    margin-top: 5px; }
-  .web-list main {
-    flex: 1 100%;
-    width: 100%;
-    max-width: 640px; }
-    .web-list main .list {
-      margin: 0; }
-      .web-list main .list li {
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-        margin-top: 5px;
-        padding-top: 5px;
-        border-top: 1px solid #a1f1a1; }
-        .web-list main .list li .thumbnail {
-          width: 100%;
-          margin-top: 5px; }
-          .web-list main .list li .thumbnail img {
-            width: 100%; }
-        .web-list main .list li .summary h3 {
-          display: inline;
-          line-height: 1.5;
-          font-size: 1.2em;
-          font-weight: 700;
-          letter-spacing: .025em; }
-        .web-list main .list li .summary .tag {
-          display: inline-block;
-          padding: 10px 5px;
-          margin-right: 5px;
-          font-size: 0.8em;
-          font-weight: 700;
-          white-space: nowrap;
-          text-align: center; }
-          .web-list main .list li .summary .tag a {
-            color: #1AAD19; }
-        .web-list main .list li .summary .datetime {
-          display: block;
-          margin-bottom: .5em;
-          font-size: 15px;
-          font-weight: normal;
-          color: #a08e8e;
-          letter-spacing: -.025em; }
-          .web-list main .list li .summary .datetime a {
-            color: #a08e8e; }
-        .web-list main .list li .summary .outline {
-          line-height: 1.5; }
-        @media screen and (min-width: 600px) {
-          .web-list main .list li {
-            flex-direction: row; }
-            .web-list main .list li .thumbnail {
-              width: 160px;
-              flex-grow: 0;
-              flex-shrink: 0; }
-            .web-list main .list li .summary {
-              margin-left: 10px; } }
-    .web-list main .pagination {
-      margin: 40px auto 60px auto;
-      text-align: center; }
-      .web-list main .pagination .button {
-        width: 50px;
-        height: 30px;
-        padding: 10px 20px;
-        border-radius: 5px; }
-      .web-list main .pagination a.button {
-        background: #1AAD19;
-        font-weight: 700;
-        color: white; }
-      .web-list main .pagination span.button {
-        color: #1AAD19;
-        border: 1px solid #a1f1a1; }
-  .web-list aside {
-    flex: 1 100%; }
-    .web-list aside section .calendar_title {
-      display: flex;
-      justify-content: space-around;
-      padding: 5px 8px;
-      background-color: #1AAD19;
-      color: #fff;
-      font-size: 1.1em;
-      font-weight: 700;
-      border-radius: 5px;
-      margin-bottom: 5px; }
-      .web-list aside section .calendar_title a {
-        color: #ffffff; }
-    .web-list aside section .calendar {
+.web-list main .list {
+  margin: 0; }
+  .web-list main .list li {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 1px solid #a1f1a1; }
+    .web-list main .list li .thumbnail {
       width: 100%;
-      border-collapse: collapse; }
-      .web-list aside section .calendar th {
-        background: #1AAD19;
-        color: #ffffff; }
-      .web-list aside section .calendar td, .web-list aside section .calendar th {
-        font-weight: 700;
-        padding: 5px 0;
-        text-align: center;
-        border: 1px solid #a1f1a1; }
-      .web-list aside section .calendar td.current {
-        background: #a1f1a1; }
-      .web-list aside section .calendar td.gray {
-        font-weight: normal;
-        background: #eeeeee; }
-      .web-list aside section .calendar td a {
+      margin-top: 5px; }
+      .web-list main .list li .thumbnail img {
+        width: 100%; }
+    .web-list main .list li .summary h3 {
+      display: inline;
+      line-height: 1.5;
+      font-size: 1.2em;
+      font-weight: 700;
+      letter-spacing: .025em; }
+    .web-list main .list li .summary .tag {
+      display: inline-block;
+      padding: 10px 5px;
+      margin-right: 5px;
+      font-size: 0.8em;
+      font-weight: 700;
+      white-space: nowrap;
+      text-align: center; }
+      .web-list main .list li .summary .tag a {
         color: #1AAD19; }
-    .web-list aside .page-link {
+    .web-list main .list li .summary .datetime {
       display: block;
-      color: #1AAD19;
-      line-height: 2.0;
-      font-weight: 700; }
-  @media screen and (min-width: 600px) {
-    .web-list {
-      flex-direction: row; }
-      .web-list main {
-        flex: 2 0px; }
-      .web-list aside {
-        flex: 1 0px;
-        padding-left: 20px; } }
+      margin-bottom: .5em;
+      font-size: 15px;
+      font-weight: normal;
+      color: #a08e8e;
+      letter-spacing: -.025em; }
+      .web-list main .list li .summary .datetime a {
+        color: #a08e8e; }
+    .web-list main .list li .summary .outline {
+      line-height: 1.5; }
+    @media screen and (min-width: 600px) {
+      .web-list main .list li {
+        flex-direction: row; }
+        .web-list main .list li .thumbnail {
+          width: 160px;
+          flex-grow: 0;
+          flex-shrink: 0; }
+        .web-list main .list li .summary {
+          margin-left: 10px; } }
+.web-list main .pagination {
+  margin: 40px auto 60px auto;
+  text-align: center; }
+  .web-list main .pagination .button {
+    width: 50px;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 5px; }
+  .web-list main .pagination a.button {
+    background: #1AAD19;
+    font-weight: 700;
+    color: white; }
+  .web-list main .pagination span.button {
+    color: #1AAD19;
+    border: 1px solid #a1f1a1; }
+.web-list aside section .calendar_title {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 8px;
+  background-color: #1AAD19;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 700;
+  border-radius: 5px;
+  margin-bottom: 5px; }
+  .web-list aside section .calendar_title a {
+    color: #ffffff; }
+.web-list aside section .calendar {
+  width: 100%;
+  border-collapse: collapse; }
+  .web-list aside section .calendar th {
+    background: #1AAD19;
+    color: #ffffff; }
+  .web-list aside section .calendar td, .web-list aside section .calendar th {
+    font-weight: 700;
+    padding: 5px 0;
+    text-align: center;
+    border: 1px solid #a1f1a1; }
+  .web-list aside section .calendar td.current {
+    background: #a1f1a1; }
+  .web-list aside section .calendar td.gray {
+    font-weight: normal;
+    background: #eeeeee; }
+  .web-list aside section .calendar td a {
+    color: #1AAD19; }
+.web-list aside .page-link {
+  display: block;
+  color: #1AAD19;
+  line-height: 2.0;
+  font-weight: 700; }

@@ -280,6 +280,22 @@ rt.hidden {
       .content main .tags_bar .selected {
         color: white;
         background: #1AAD19; }
+    .content main .article_title h1 {
+      display: inline;
+      line-height: 1.75;
+      font-size: 1.5em;
+      font-weight: 700;
+      letter-spacing: .025em; }
+    .content main .article_title .tag {
+      display: inline-block;
+      padding: 10px 5px;
+      margin-right: 5px;
+      font-size: 0.8em;
+      font-weight: 700;
+      white-space: nowrap;
+      text-align: center; }
+      .content main .article_title .tag a {
+        color: #1AAD19; }
     .content main .list .listfeedad_desktop {
       display: none; }
       @media screen and (min-width: 600px) {
@@ -329,79 +345,63 @@ rt.hidden {
     font-size: 0.8em;
     margin: 5px 0; }
 
-.playlist {
-  display: flex;
-  flex-direction: column; }
-  .playlist main {
-    flex: 1 100%;
-    width: 100%;
-    max-width: 640px; }
-    .playlist main .player {
-      margin-bottom: 5px;
-      padding: 10px;
-      border-radius: 5px;
-      background-color: #a1f1a1; }
-    .playlist main .list {
-      margin: 0; }
-      .playlist main .list .playing:before {
-        content: url("https://newswebeasy.github.io/assets/playing.gif");
-        float: left;
-        margin-left: 10px;
-        margin-top: 10px; }
-      .playlist main .list li {
-        list-style-type: none;
-        padding-top: 5px;
-        padding-bottom: 10px;
-        border-top: 1px solid #a1f1a1; }
-        .playlist main .list li .item {
-          display: block;
-          margin-left: 40px;
-          text-decoration: none; }
-          .playlist main .list li .item h3 {
-            display: inline;
-            line-height: 1.5;
-            font-size: 1.2em;
-            font-weight: 700;
-            letter-spacing: .025em; }
-          .playlist main .list li .item .tag {
-            display: inline-block;
-            padding: 10px 5px;
-            margin-right: 5px;
-            font-size: 0.8em;
-            font-weight: 700;
-            white-space: nowrap;
-            text-align: center;
-            color: #1AAD19; }
-          .playlist main .list li .item .datetime {
-            font-size: 15px;
-            color: #a08e8e;
-            letter-spacing: -.025em; }
-          .playlist main .list li .item .more {
-            margin-left: 5px;
-            font-size: 15px;
-            color: #1AAD19;
-            letter-spacing: -.025em; }
-        @media screen and (min-width: 600px) {
-          .playlist main .list li {
-            flex-direction: row; }
-            .playlist main .list li .summary {
-              margin-left: 20px; } }
-    .playlist main .index_link {
+.playlist main .player {
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #a1f1a1; }
+.playlist main .list {
+  margin: 0; }
+  .playlist main .list .playing:before {
+    content: url("https://newswebeasy.github.io/assets/playing.gif");
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px; }
+  .playlist main .list li {
+    list-style-type: none;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-top: 1px solid #a1f1a1; }
+    .playlist main .list li .item {
       display: block;
-      margin-top: 30px;
-      color: #1AAD19;
-      font-weight: 700; }
-  .playlist aside {
-    flex: 1 100%; }
-    .playlist aside .autoad {
-      display: none; }
+      margin-left: 40px;
+      text-decoration: none; }
+      .playlist main .list li .item h3 {
+        display: inline;
+        line-height: 1.5;
+        font-size: 1.2em;
+        font-weight: 700;
+        letter-spacing: .025em; }
+      .playlist main .list li .item .tag {
+        display: inline-block;
+        padding: 10px 5px;
+        margin-right: 5px;
+        font-size: 0.8em;
+        font-weight: 700;
+        white-space: nowrap;
+        text-align: center;
+        color: #1AAD19; }
+      .playlist main .list li .item .datetime {
+        font-size: 15px;
+        color: #a08e8e;
+        letter-spacing: -.025em; }
+      .playlist main .list li .item .more {
+        margin-left: 5px;
+        font-size: 15px;
+        color: #1AAD19;
+        letter-spacing: -.025em; }
+    @media screen and (min-width: 600px) {
+      .playlist main .list li {
+        flex-direction: row; }
+        .playlist main .list li .summary {
+          margin-left: 20px; } }
+.playlist main .index_link {
+  display: block;
+  margin-top: 30px;
+  color: #1AAD19;
+  font-weight: 700; }
+.playlist aside .autoad {
+  display: none; }
   @media screen and (min-width: 600px) {
-    .playlist {
-      flex-direction: row; }
-      .playlist main {
-        flex: 2 0px; }
-      .playlist aside {
-        flex: 1 0px;
-        padding-left: 20px; }
-        .playlist aside .autoad {
-          display: block; } }
+    .playlist aside .autoad {
+      display: block; } }
