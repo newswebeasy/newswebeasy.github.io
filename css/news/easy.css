@@ -258,6 +258,27 @@ rt.hidden {
     flex: 1 100%;
     width: 100%;
     max-width: 640px; }
+    .content main .tags_bar {
+      display: flex;
+      flex-wrap: wrap;
+      line-height: 1.5; }
+      .content main .tags_bar .tag {
+        display: inline-block;
+        font-size: 0.8em;
+        font-weight: 700;
+        white-space: nowrap;
+        text-align: center;
+        padding: 2px 5px;
+        color: #1AAD19;
+        border: 1px solid #a1f1a1;
+        border-radius: 5px;
+        margin-bottom: 3px;
+        margin-right: 5px; }
+        .content main .tags_bar .tag a {
+          color: #1AAD19; }
+      .content main .tags_bar .selected {
+        color: white;
+        background: #1AAD19; }
     .content main .list .listfeedad_desktop {
       display: none; }
       @media screen and (min-width: 600px) {
