@@ -296,6 +296,15 @@ rt.hidden {
       text-align: center; }
       .content main .article_title .tag a {
         color: #1AAD19; }
+    .content main .datetime {
+      display: block;
+      margin-bottom: .5em;
+      font-size: 15px;
+      font-weight: normal;
+      color: #a08e8e;
+      letter-spacing: -.025em; }
+      .content main .datetime a {
+        color: #a08e8e; }
     .content main .list .listfeedad_desktop {
       display: none; }
       @media screen and (min-width: 600px) {
@@ -321,6 +330,11 @@ rt.hidden {
         margin-bottom: 5px; }
     .content aside section.web_news, .content aside section.easy_news {
       margin-top: 5px; }
+    .content aside .page-link {
+      display: block;
+      color: #1AAD19;
+      line-height: 2.0;
+      font-weight: 700; }
   @media screen and (min-width: 600px) {
     .content {
       flex-direction: row; }
@@ -375,15 +389,6 @@ rt.hidden {
       text-align: center; }
       .easy-list main .list li .summary .tag a {
         color: #1AAD19; }
-    .easy-list main .list li .summary .datetime {
-      display: block;
-      margin-bottom: .5em;
-      font-size: 15px;
-      font-weight: normal;
-      color: #a08e8e;
-      letter-spacing: -.025em; }
-      .easy-list main .list li .summary .datetime a {
-        color: #a08e8e; }
     .easy-list main .list li .summary .outline {
       line-height: 1.5; }
     @media screen and (min-width: 600px) {
@@ -440,8 +445,3 @@ rt.hidden {
     background: #eeeeee; }
   .easy-list aside section .calendar td a {
     color: #1AAD19; }
-.easy-list aside .page-link {
-  display: block;
-  color: #1AAD19;
-  line-height: 2.0;
-  font-weight: 700; }
