@@ -444,6 +444,7 @@ rt.hidden {
 .easy-news main section.words .descriptions {
   line-height: 2.0; }
 .easy-news aside .rectad {
+  width: 100%;
   margin: 20px; }
   @media screen and (min-width: 600px) {
     .easy-news aside .rectad {

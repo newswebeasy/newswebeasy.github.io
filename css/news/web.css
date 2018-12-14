@@ -406,6 +406,7 @@ rt.hidden {
       margin-top: 10px;
       margin-bottom: 5px; }
 .web-news aside .rectad {
+  width: 100%;
   margin: 20px; }
   @media screen and (min-width: 600px) {
     .web-news aside .rectad {
