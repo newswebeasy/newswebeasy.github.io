@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta http-equiv="refresh" content="0;URL=/news/">
+  <script>
+    var a = location.pathname.split('/');
+    var p = a.pop();
+    if (p === '') {
+      a.pop();
+    }
+    a.push('');
+    location.pathname = a.join('/');
+  </script>
 </head>
+
 <body>
 </body>
+
 </html>
