@@ -1,4 +1,4 @@
-var playing = 0;
+var playing;
 var playlist = document.getElementsByClassName('title_link');
 
 var player = document.getElementById('player');
