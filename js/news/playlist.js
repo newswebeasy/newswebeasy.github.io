@@ -42,5 +42,5 @@ function play(i) {
 }
 
 if (playlist && playlist.length > 0) {
-  play(playlist[0]);
+  play(0);
 }
