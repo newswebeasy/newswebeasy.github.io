@@ -1,4 +1,4 @@
-var playing = null;
+var playing = 0;
 var playlist = document.getElementsByClassName('title_link');
 
 var player = document.getElementById('player');
@@ -10,28 +10,27 @@ player.onended = function () {
   if (repeat_one) {
     player.play();
   } else {
-    var next = playing.nextElementSibling || playlist[0];
-    console.log('next');
-    console.log(next);
+    let next = (playing + 1) % playlist.length;
+    console.log(`next: ${next}`);
     play(next);
   }
 }
 player.onplay = function (e) {
-  playing.parentElement.parentElement.classList.add("playing");
+  playlist[playing].parentElement.parentElement.classList.add("playing");
 }
 player.onpause = function (e) {
-  playing.parentElement.parentElement.classList.remove("playing");
+  playlist[playing].parentElement.parentElement.classList.remove("playing");
 }
 
-function play(el) {
-  if (el != playing) {
+function play(i) {
+  if (i != playing) {
     var last = playing;
-    playing = el;
-    player.src = playing.dataset.voiceUrl;
+    playing = i;
+    player.src = playlist[playing].dataset.voiceUrl;
     player.load();
 
     if (last) {
-      last.parentElement.parentElement.classList.remove("playing");
+      playlist[last].parentElement.parentElement.classList.remove("playing");
     }
   }
 
