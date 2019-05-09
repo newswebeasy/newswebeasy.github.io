@@ -2,13 +2,6 @@
 
 const pad2 = (x) => (x < 10 ? '0' : '') + x;
 
-const page = {
-  categories: 'easy',
-  yyyy: '2019',
-  mm: '05',
-  dd: '09'
-};
-
 $(document).ready(function () {
 
   let url_calendar = `/news/data/${page.yyyy}/${page.mm}/calendar.json`;
