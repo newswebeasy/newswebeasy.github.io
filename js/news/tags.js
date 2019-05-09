@@ -4,9 +4,9 @@ const pad2 = (x) => (x < 10 ? '0' : '') + x;
 
 let page = {
   categories: 'easy',
-  yyyy: 2018,
-  mm: 5,
-  dd: 1,
+  yyyy: '2018',
+  mm: '05',
+  dd: '09',
   tag: 'business'
 };
 
@@ -15,7 +15,7 @@ $(document).ready(function () {
 
   let url_calendar = `https://newswebeasy.github.io/news/data/${page.yyyy}/${page.mm}/calendar.json`;
   $.getJSON(url_calendar, function (resp) {
-    let dt = new Date(page.yyyy, page.mm - 1);
+    let dt = new Date(page.yyyy, parseInt(page.mm) - 1);
 
     let min_date = new Date(dt);
     if (min_date.getDay() != 0) {
