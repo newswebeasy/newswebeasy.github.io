@@ -2,15 +2,6 @@
 
 const pad2 = (x) => (x < 10 ? '0' : '') + x;
 
-let page = {
-  categories: 'easy',
-  yyyy: '2018',
-  mm: '05',
-  dd: '09',
-  tag: 'business'
-};
-
-
 $(document).ready(function () {
 
   let url_calendar = `https://newswebeasy.github.io/news/data/${page.yyyy}/${page.mm}/calendar.json`;
