@@ -41,7 +41,7 @@ $(document).ready(function () {
       if (di.getMonth() == dt.getMonth()) {
         let has_news = resp.dates[pad2(di.getDate())];
         if (has_news) {
-          has_news = has_news[categories];
+          has_news = has_news[page.categories];
           if (has_news) {
             has_news = has_news[page.tag] > 0;
           }
