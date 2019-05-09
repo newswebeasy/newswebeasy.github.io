@@ -13,7 +13,7 @@ let page = {
 
 $(document).ready(function () {
 
-  let url_calendar = `/news/data/${page.yyyy}/${page.mm}/calendar.json`;
+  let url_calendar = `https://newswebeasy.github.io/news/data/${page.yyyy}/${page.mm}/calendar.json`;
   $.getJSON(url_calendar, function (resp) {
     let dt = new Date(page.yyyy, page.mm - 1);
 
