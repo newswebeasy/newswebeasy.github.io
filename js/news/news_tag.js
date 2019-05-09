@@ -38,7 +38,7 @@ $(document).ready(function () {
           }
         }
         if (has_news) {
-          if (di.getDate() !== page.dd) {
+          if (di.getDate() !== parseInt(page.dd)) {
             week += '<td>';
           } else {
             week += '<td class="current">';
@@ -114,7 +114,7 @@ $(document).ready(function () {
       nextDayUrl = nextMonthUrl;
     }
     if (nextDayUrl) {
-      $('#nextDay').html(`<a class="button" href="${nextDayUrl}">次の日 &gt;</a>`)
+      $('#nextDay').html(`<a class="button" href="${nextDayUrl}">次の日 &gt;</a>`);
     } else {
       $('#nextDay').html('<span class="button">次の日 &gt;</span>');
     }
