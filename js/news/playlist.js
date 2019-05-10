@@ -1,10 +1,12 @@
-var playing;
-var playlist = document.getElementsByClassName('title_link');
+'use restrict';
 
-var player = document.getElementById('player');
+let playing = 0;
+let playlist = document.getElementsByClassName('title_link');
+
+const player = document.getElementById('player');
 player.load();
 
-var repeat_one = false;
+let repeat_one = false;
 player.onended = function () {
   console.log('end');
   if (repeat_one) {
@@ -42,5 +44,7 @@ function play(i) {
 }
 
 if (playlist && playlist.length > 0) {
-  play(0);
+  player.src = playlist[playing].dataset.voiceUrl;
+  player.load();
+  player.play();
 }
