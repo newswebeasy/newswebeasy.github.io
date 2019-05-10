@@ -31,9 +31,7 @@ function play(i) {
     player.src = playlist[playing].dataset.voiceUrl;
     player.load();
 
-    if (type(last) !== 'undefined') {
-      playlist[last].parentElement.parentElement.classList.remove("playing");
-    }
+    playlist[last].parentElement.parentElement.classList.remove("playing");
   }
 
   if (player.paused) {
