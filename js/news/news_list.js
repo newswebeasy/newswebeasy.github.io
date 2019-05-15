@@ -67,9 +67,9 @@ $(document).ready(function () {
       let prevMonth = new Date(dt);
       prevMonth.setDate(0);
       let mm = pad2(prevMonth.getMonth() + 1);
-      prevMonthUrl = '{{site.baseurl}}/${page.categories}/' + prevMonth.getFullYear() + '/' + mm + '/' + resp.prev[page.categories] + '/';
+      prevMonthUrl = `/news/${page.categories}/${prevMonth.getFullYear()}/${mm}/${resp.prev[page.categories]}/`;
 
-      $('#prevMonth').html('<a href="' + prevMonthUrl + '" title="前の月 ' + prevMonth.getFullYear() + '年' + mm + '月">&lt;</a>');
+      $('#prevMonth').html(`<a href="${prevMonthUrl}" title="前の月 ${prevMonth.getFullYear()}年${mm}月">&lt;</a>`);
     }
 
     // next month
@@ -79,9 +79,9 @@ $(document).ready(function () {
       nextMonth.setDate(32);
       nextMonth.setDate(1);
       let mm = pad2(nextMonth.getMonth() + 1);
-      nextMonthUrl = '{{site.baseurl}}/${page.categories}/' + nextMonth.getFullYear() + '/' + mm + '/' + resp.next[page.categories] + '/';
+      nextMonthUrl = `/news/${page.categories}/${nextMonth.getFullYear()}/${mm}/${resp.next[page.categories]}/`;
 
-      $('#nextMonth').html('<a href="' + nextMonthUrl + '" title="次の月 ' + nextMonth.getFullYear() + '年' + mm + '月">&gt;</a>');
+      $('#nextMonth').html(`<a href="${nextMonthUrl}" title="次の月 ${nextMonth.getFullYear()}年${mm}月">&gt;</a>`);
     }
 
     let dates = Object.entries(resp.dates);
